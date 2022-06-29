@@ -1,0 +1,149 @@
+<table border="1">
+    <tr>
+        <th>ML Model</th>
+        <th>Description</th>
+        <th>Diagram</th>
+        <th>Advantage</th>
+        <th>Disadvantage</th>
+        <th>Uses</th>
+        <th>Types of Datasets</th>
+    </tr>
+    <tr>
+        <td>Convolution Neural Network(CNNs)</td>
+        <td>
+            <ul>
+                <li> Consists of multiple layers</li>
+                <li>Instead of connecting each neuron to the next ones, we connect it with only handful of them(the rceptive field)</li>
+                <li>These layers process and extract features from data</li>
+                <li>It has a convolution layer that has several filters to perform the convolution operation</li>
+
+
+            </ul>
+           </td>
+           <td> <img src="https://www.researchgate.net/publication/336805909/figure/download/fig1/AS:817888827023360@1572011300751/Schematic-diagram-of-a-basic-convolutional-neural-network-CNN-architecture-26.ppm" alt="CNN" style="width:200px;height:200px;"></td>
+           <td><ul>
+            <li>Very High accuracy in image recognition problems.</li>
+            <li>Automatically detects the important features without any human supervision.</li>
+            <li>Weight sharing.</li>
+           </ul></td>
+           <td><ul>
+            <li>CNN do not encode the position and orientation of object.</li>
+            <li>Lack of ability to be spatially invariant to the input data.</li>
+            <li>Lots of training data is required.</li>
+           </ul></td>
+
+           <td><ul><li>As it tries to regularize feedforward networks to avoid overfitting (when the model learns only pre-seen data and can’t generalize), it makes them very good in identifying spatial relationships between the data.</li></ul></td>
+           <td><ul>
+            <li>Image processing, classification, segmentation and also for other auto correlated data</li>
+            <li>Image Data</li>
+           </ul></td>
+    </tr>
+    <tr>
+        <td>Long Short Term Memory Networks (LSTMs)</td>
+        <td>
+            <ul>
+                <li> Consists of multiple layerscan learn and memorize long-term dependencies</li>
+                <li>Recalling past information for long periods is the default behavior. </li>
+                <li>LSTMs have a chain-like structure where four interacting layers communicate in a unique way.</li>
+
+
+
+            </ul>
+           </td>
+           <td> <img src="https://www.researchgate.net/publication/340319031/figure/fig3/AS:875343929954307@1585709664374/The-architecture-of-LSTM-cell.png" alt="LSTM" style="width:200px;height:200px;"></td>
+           <td><ul>
+            <li>LSTMs provide us with a large range of parameters such as</li>
+            <ul>
+                <li>Learning Rates</li>
+                <li>Input and Output Biases</li>
+            </ul>
+           </ul></td>
+           <td><ul>
+            <li>LSTMs take longer to train.</li>
+            <li>LSTMs require more memory to train.</li>
+            <li>LSTMs are sensitive to different random weight initializations.</li>
+           </ul></td>
+           <td><ul><li>They are useful in time-series prediction because they remember previous inputs.</li></ul></td>
+           <td><ul>
+            <li>Besides time-series predictions, LSTMs are typically used for </li>
+            <ul>
+                <li>Speech Recognition</li>
+                <li>Music Composition</li>
+                <li>Pharmaceutical development</li>
+            </ul>
+            <li></li>
+           </ul></td>
+    </tr>
+      <tr>
+        <td>Recurrent Neural Networks (RNNs)</td>
+        <td>
+            <ul>
+                <li>RNNs have connections that form directed cycles, which allow the outputs from the LSTM to be fed as inputs to the current phase. </li>
+                <li>The output from the LSTM becomes an input to the current phase and can memorize previous inputs due to its internal memory. </li>
+                <li>It can be thought of as a loop from the output to the input in order to pass information back to the network.</li>
+
+
+
+            </ul>
+           </td>
+           <td> <img src="https://www.researchgate.net/publication/334464982/figure/fig1/AS:780930788626432@1563199817147/Basic-RNN-structure.ppm" alt="RNN" style="width:200px;height:200px;"></td>
+           <td><ul>
+            <li>An RNN remembers each and every information through time. </li>
+            <li>Recurrent neural network are even used with convolutional layers to extend the effective pixel neighborhood.</li>
+
+           </ul></td>
+           <td><ul>
+            <li>Gradient vanishing and exploding problems.</li>
+            <li>Training an RNN is a very difficult task.</li>
+            <li>It cannot process very long sequences if using tanh or relu as an activation function.</li>
+           </ul></td>
+           <td><ul><li>Text-to-speech conversions.</li></ul></td>
+           <td><ul>
+            <li>Sequence data. </li>
+
+
+           </ul></td>
+    </tr>
+    <tr>
+        <td>Generative Adversarial Networks (GANs)</td>
+        <td>
+            <ul>
+                <li>GANs are generative deep learning algorithms that create new data instances that resemble the training data. </li>
+                <li>GAN has two components: </li>
+                <ul>
+                    <li>a generator, which learns to generate fake data,</li>
+                    <li>a discriminator, which learns from that false information.</li>
+                <ul></li>
+                </ul>
+
+            </ul>
+           </td>
+           <td> <img src="https://www.researchgate.net/publication/340481789/figure/fig1/AS:877673731596293@1586265132992/The-original-generative-adversarial-network-GAN-model-In-simple-terms-G-wants-to.png" alt="GNN" style="width:200px;height:200px;"></td>
+           <td><ul>
+            <li>GANs generate data that looks similar to original data.  </li>
+            <li>GANs go into details of data and can easily interpret into different versions</li>
+            <li>By using GANs and machine learning we can easily recognize trees, street, bicyclist, person, and parked cars and also can calculate the distance between different objects.</li>
+
+           </ul></td>
+           <td><ul>
+            <li>Gradient vanishing and exploding problems.Harder to train:  You need to provide different types of data continuously to check if it works accurately or not.</li>
+            <li>Generating results from text or speech is very complex</li>
+
+           </ul></td>
+           <td><ul><li>Applications of Generative Adversarial Networks include: </li>
+           <ul>
+            <li>Video games</li>
+            <li>Astronomical images</li>
+            <li>Interior design</li>
+            <li>Fashion</li>
+           </ul>
+           </ul></td>
+           <td><ul>
+            <li>Image generation, video generation and voice generation. </li>
+
+
+           </ul></td>
+    </tr>
+
+
+</table>
