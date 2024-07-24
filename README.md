@@ -1,3 +1,3 @@
-# Deep_learning_algorithms
+# Deep_learning_lab
 
-A comparative study of various deep learning algorithms.
+7th semester AI
